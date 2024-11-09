@@ -64,3 +64,32 @@
     font-weight: 700;
     line-height: 1.3em;
 }
+
+/* Custom Button Styles */
+.btn-custom {
+    font-family: "Hind Siliguri", Sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0px !important;
+    padding-left: 30px !important;  /* Increase left padding */
+    padding-right: 30px !important; /* Increase right padding */
+    padding-top: 15px !important;   /* Increase top padding */
+    padding-bottom: 15px !important;/* Increase bottom padding */
+    transition: transform 0.2s ease-in-out !important;
+    border-radius: 12px !important;
+}
+
+/* Button Hover Effect */
+.btn-custom:hover {
+    transform: translateY(-5px) !important; /* Moves the button slightly up on hover */
+}
+
+/* Hover Effect for Outline Button */
+.btn-outline-danger {
+    border: 3px solid #dc3545 !important;
+}
+
+.btn-outline-danger:hover {
+    transform: translateY(-5px); /* Moves the button slightly up on hover */
+}
+
