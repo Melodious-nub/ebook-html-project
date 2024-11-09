@@ -34,6 +34,10 @@
     box-shadow: none;
 }
 
+.three-step-image {
+    max-width: 65%;
+}
+
 .sub-head-title {
     padding: 10px 10px 10px 10px;
 }
@@ -144,10 +148,70 @@
     gap: 55px;
 }
 
+.methology-section {
+    background-color: #FFECED;
+    padding: 20px 0px;
+}
+
+.container-text-math {
+    background-color: #EE2C3C;
+    margin-top: 70px;
+}
+
+.heading-title-mathology {
+    color: white;
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.sub-text-container {
+    padding: 10px 10px 10px 10px;
+}
+
+.sub-heading-title {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.font-multi-color {
+    text-align: center;
+    font-family: "Hind Siliguri", Sans-serif;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 1.2;
+}
+
+.info-text-mathology {
+    color: #0D0000;
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     .d-flex-custom {
         flex-direction: column; /* Stack buttons vertically on small screens */
         gap: 25px; /* Adjust gap between buttons */
+    }
+
+    .image-container .intro-image {
+        max-width: 100%;
+    }
+
+    .border-right {
+        border-bottom: 2px solid #EE2C3C;
+        border-right: none;
+    }
+
+    .three-step-image {
+        max-width: 100%;
     }
 }
