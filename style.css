@@ -331,6 +331,30 @@
     line-height: 1.5em;
 }
 
+.text-sticky-end {
+    text-align: center;
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.sticky-second-container {
+    padding: 15px 0; 
+    border-bottom: 3px solid #EE2C3C;
+}
+
+.sticky-second-container:last-child {
+    border-bottom: none;
+}
+
+.sticky-second-text {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
 /* Responsive Styling */
 @media (max-width: 767px) {
     .d-flex-custom {
