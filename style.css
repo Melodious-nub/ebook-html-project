@@ -181,6 +181,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 1.5em;
+    text-align: center;
 }
 
 .font-multi-color {
@@ -197,6 +198,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5em;
+    text-align: center;
 }
 
 .efective-learning-top-img {
@@ -238,6 +240,95 @@
     font-weight: 600;
     text-decoration: underline;
     max-width: 350px;
+}
+
+/* Main section styling */
+.reason-not-a-marketer {
+    position: relative;
+    background-color: #FFECED;
+    padding-bottom: 100px;
+    overflow: hidden; /* Ensure the SVG stays within the section */
+}
+
+/* SVG wave shape styling */
+.background-shape {
+    position: absolute;
+    bottom: 0; /* Align the SVG to the bottom of the section */
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+}
+
+/* Fill the SVG wave with white */
+.background-shape svg {
+    width: 100%;
+    height: 100px; /* Matches the height of .background-shape */
+}
+
+.elementor-shape-fill {
+    fill: #FFFFFF; /* White color for the wave */
+}
+
+.widget-container-list {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-icon-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #EE2C3C; /* Light underline for list items */
+}
+
+.widget-icon-list-item:last-child {
+    border-bottom: none; /* Remove underline for the last item */
+}
+
+.icon-list-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.icon-list-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: #EE2C3C; /* Icon color */
+}
+
+.icon-list-text {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: #333; /* Adjust text color if needed */
+}
+
+.icon-list-text:hover {
+    color: #EE2C3C;
+}
+
+.text-container-after-widget {
+    padding: 20px;
+}
+
+.text-after-widget {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5em;
 }
 
 /* Responsive Styling */
