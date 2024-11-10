@@ -12,6 +12,13 @@
     border-radius: 500px 500px 500px 500px;
 }
 
+.text-bg-rev {
+    background-color: transparent;
+    padding: 0px 10px 0px 10px;
+    background-image: linear-gradient(90deg, #FF103400 0%, #8D00FF52 100%);
+    border-radius: 500px 500px 500px 500px;
+}
+
 .text-heading-big {
     color: black;
     font-family: "Hind Siliguri", Sans-serif;
@@ -449,11 +456,178 @@
 /* Header text style */
 .card-title {
     font-family: "Hind Siliguri", Sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.3em;
     color: #333;
 }
+
+.course-module {
+    background-color: transparent;
+    background-image: linear-gradient(360deg, #EC325126 0%, #FFFDFE 29%);
+}
+
+/* Accordion Container Style */
+.custom-accordion .accordion-item {
+    background-color: #ffd7d7;
+    border: 1px solid lightgray;
+}
+
+/* Accordion Button Styles */
+.custom-accordion .accordion-button {
+    background-color: #ffd7d7;
+    color: #0D0000;
+    font-family: "RocknRoll One", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 20px;
+    border: none;
+    transition: color 0.3s;
+}
+
+/* Hover and Active State (Text Color Change Only) */
+.custom-accordion .accordion-button:hover,
+.custom-accordion .accordion-button:not(.collapsed) {
+    color: #EE2C3C; /* Change only text color */
+    background-color: #ffd7d7;
+}
+
+/* Accordion Body Style */
+.custom-accordion .accordion-collapse .accordion-body {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+/* Bullet List Styles */
+.custom-accordion .accordion-body ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.custom-accordion .accordion-body li {
+    font-family: "Verdana", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0D0000;
+    margin-bottom: 10px;
+}
+
+/* Course Mentor Section Styles */
+.course-mentor-section {
+    background-color: transparent;
+    background-image: radial-gradient(at top center, #EC325126 0%, #FFFDFE 70%);
+}
+
+.mentor-description {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0D0000;
+}
+
+/* Right Column Image Styling */
+.mentor-image {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+.how-to-buy-section {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFECED 10%, #FFFFFF 50%);
+}
+
+.faq-section {
+    background-color: transparent;
+    background-image: linear-gradient(0deg, #FFECED 0%, #FFFFFF 60%);
+}
+
+.faq-text {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0D0000;
+}
+
+/* Enroll Course Section Styles */
+.enroll-course-section {
+    background-color: #f5f5f5;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Image Column Styling */
+.course-image {
+    flex: 0 0 40%; /* 40% of the card width */
+    padding: 15px; /* Image padding */
+}
+
+.course-image img {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+    object-fit: cover;
+}
+
+/* Content Column Styling */
+.course-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-title {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Pricing Styles */
+.course-pricing {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 20px;
+    color: #0D0000;
+}
+
+.current-price {
+    font-weight: 700;
+    color: #EE2C3C;
+}
+
+.original-price {
+    font-weight: 500;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* Enroll Button */
+.enroll-button .btn {
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #EE2C3C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.enroll-button .btn:hover {
+    background-color: #d41f2f;
+}
+
 
 /* Responsive Styling */
 @media (max-width: 767px) {
