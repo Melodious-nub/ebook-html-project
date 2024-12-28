@@ -820,7 +820,7 @@
                             <!-- email of customer -->
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email Address <span style="font-weight: bolder; color: red;">*</span></label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="type your email address...">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="Type your email address...">
                             </div>
 
                             <!-- billing details -->
@@ -887,8 +887,8 @@
                              </div>
 
                              <!-- button payment -->
-                            <div class="d-grid mt-4">
-                                <button class="btn btn-danger" type="button">Place Order</button>
+                             <div class="d-grid mt-4">
+                                <button class="btn btn-danger" id="placeOrderButton" disabled>Place Order</button>
                             </div>
                         </div>                         
                     </div>
@@ -896,5 +896,35 @@
             </div>
         </section>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const emailInput = document.getElementById("exampleFormControlInput1");
+            const fullNameInput = document.getElementById("fullName");
+            const phoneInput = document.getElementById("phone");
+            const placeOrderButton = document.getElementById("placeOrderButton");
+
+            function validateForm() {
+                const isEmailValid = emailInput.value.trim() !== "";
+                const isFullNameValid = fullNameInput.value.trim() !== "";
+                const isPhoneValid = phoneInput.value.trim() !== "";
+
+                placeOrderButton.disabled = !(isEmailValid && isFullNameValid && isPhoneValid);
+            }
+
+            [emailInput, fullNameInput, phoneInput].forEach(input => {
+                input.addEventListener("input", validateForm);
+            });
+
+            placeOrderButton.addEventListener("click", function () {
+                if (!placeOrderButton.disabled) {
+                    // Redirect to the payment page
+                    window.location.href = "payment.html";
+                }
+            });
+
+            validateForm();
+        });
+    </script>
 </body>
 </html>
